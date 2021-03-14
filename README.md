@@ -8,7 +8,7 @@ m=Chain(Dense(23,16,sigmoid),
         Dense(16,16,sigmoid),
         Dense(16,2), softmax)
 ```
-The model was set to run until the difference in consecutive losses was less than .0000001.  As seen in the following graph of loss versus accuracy of the training set, the model was stopped at precisely 860 epochs.  Both the training and test outputs were one hot encoded and the training data and the test data were both normalized to achieve faster and more consistent results.  
+The model was set to run while the difference in consecutive losses were greater than .0000001.  As seen in the following graph of loss versus accuracy of the training set, the model was stopped at precisely 860 epochs.  Both the training and test outputs were one hot encoded and the training data and the test data were both normalized to achieve faster and more consistent results.  
 
 <img width="599" alt="image" src="https://user-images.githubusercontent.com/58529391/111062134-f60efd80-845b-11eb-9cd9-f2d690a2722e.png">
 

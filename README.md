@@ -1,6 +1,6 @@
 # Credit Default From History Using Flux
 
-The credit data used was organized in 30,000 samples of 25 ratings based on the credit limits available, sex, education, marital status and payment amounts and accounts.  The data is used to predict a person defaulting on their credit cards within the next month.  Defaulting is labeled with a 1 and not defaulting is labele with 0.  The most common defaulting characteristic is female, with a university education and married at 3% of the dataset.  
+The credit data used was organized in 30,000 samples of 25 ratings based on the credit limits available, sex, education, marital status and payment amounts and accounts.  The data is used to predict a person defaulting on their credit cards within the next month.  Defaulting is labeled with a 1 and not defaulting is labeled with 0.  The most common defaulting characteristic is female, with a university education and married at 3% of the dataset.  
 
 Flux is a useful package to use for Julia for machine learning.  This is similar to tensorflow or keras in Python.  To model this specific problem the training set was portioned to 25,000 samples and the test set to the remaining 5,000.  The optimal accuracy rate was achieved with one hidden layer.  The model achieved better accuracy with the node amount between the input layer at 16.  The output layer node count was at 2 with a softmax so that the highest probability could be seen for each sample and help to train the model.  In Flux the model is written as follows:
 ```
